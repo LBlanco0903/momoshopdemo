@@ -695,7 +695,7 @@ footer a {
     width: 100vw;
     left: 0;
   }
-  #cart input {
+  #cart input, select {
     width: auto;
   }
   #cart table {
