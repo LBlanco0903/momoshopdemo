@@ -236,7 +236,7 @@ send.addEventListener("click", () => {
       const cant1 = [];
       let part2 = "";
       let part1 =
-        "https://api.whatsapp.com//send?phone=584244684654&text=Hola+quiero+realizar+una+compra,+acá+te+dejo+los+detalles+de+mi+pedido:%0A%0APrendas:%20%20%0A";
+        "https://api.whatsapp.com//send?phone=584125012163text=Hola+quiero+realizar+una+compra,+acá+te+dejo+los+detalles+de+mi+pedido:%0A%0APrendas:%20%20%0A";
 
       for (let i = 0; i < prendas.length; i++) {
         const prenda = prendas[i].textContent;
