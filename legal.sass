@@ -1,0 +1,172 @@
+$opacity: #000000a9
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    scroll-behavior: smooth
+
+body
+    
+    font-family: 'Roboto', sans-serif
+    overflow-x: hidden
+    
+section
+    background: url('./background.jpg')
+    width: 100vw
+    height: 300px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-size: cover
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        width: 100vw
+        height: 300px
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: $opacity
+    h2
+        color: #fff
+        font-size: 35px
+        position: relative
+        z-index: 5
+        font-weight: 800
+    a
+        position: absolute
+        bottom: 10px
+        right: 30px
+        color: #fff
+        text-decoration: none
+        z-index: 5
+        font-weight: 800
+main
+    padding: 20px
+    font-weight: 800
+    p
+        line-height: 1.25
+        text-align: justify
+    h3
+        font-size: 25px
+        margin: 10px 0
+
+footer
+    width: 100vw
+    padding: 20px
+    background: #000
+    display: flex
+    justify-content: space-between
+    color: #fff
+    a
+        color: #fff
+        text-decoration: none
+        font-weight: 800
+        padding-right: 10px
+
+
+.cookies__banner
+    display: none
+    background-color: #fff
+    padding: 20px
+    width: calc( 100% - 40px )
+    max-width: 300px
+    line-height: 150%
+    border-radius: 10px
+    position: fixed
+    bottom: 20px
+    right: 20px
+    z-index: 1000000
+    padding-top: 40px
+    box-shadow: 0 2px 20px 10px rgba(222, 222, 222, .25)
+    text-align: center
+    .cookie__img
+        max-width: 100px
+        position: absolute
+        top: -50px
+        left: calc( 50% - 50px )
+    .cookie__title
+        font-size: 25px
+        margin-top: 20px
+        color: #000
+    .cookie__text
+        color: #000
+        font-size: 18px
+        font-weight: 800
+        margin: 10px 0
+    .cookie__button
+        background-color: #000
+        color: #fff
+        width: 100%
+        padding: 10px
+        font-size: 25px
+        border: none
+        border-radius: 5px
+    .cookie__policy
+        display: block
+        padding-top: 10px
+        color: #000
+        text-decoration: none
+.cookies__banner.active
+    display: block
+.background__cookies
+    display: none
+    background-color: $opacity
+    position: fixed
+    z-index: 899
+    width: 100vw
+    height: 100vh
+    top: 0
+    left: 0
+.background__cookies.active
+    display: block
+.cookie__button:active
+    background-color: #000000cb
+
+/*Scroll to top*/
+#scroll-to-top__button
+    position: fixed
+    width: 50px
+    height: 50px
+    bottom: 20px
+    left: 20px
+    z-index: 10000
+    background-color: $opacity
+    border-radius: 50%
+    text-align: center
+    i
+        color: #fff
+        font-size: 50px
+
+#scroll-to-top__button:hover
+    cursor: pointer
+    transform: scale(1.1)
+
+.ocult
+    opacity: 0
+
+.show__scroll
+    opacity: 1
+
+/*Loader*/
+.loader-container
+    width: 100vw
+    height: 100vh
+    position: fixed
+    background-color: #000
+    display: flex
+    top: 0
+    align-items: center
+    justify-content: center
+    z-index: 10000
+    transition: .5s all
+    img
+        width: 350px
+
+@media screen and (max-width: 768px)
+    .loader-container
+        img
+            width: 300px
